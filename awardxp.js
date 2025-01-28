@@ -133,21 +133,15 @@ async function awardAction(event) {
 }
 
 function getParty() {
-  const partyFolders = game.folders.search({
-    query: PARTY_FOLDER_NAME, filters: [
-      { field: "type", operator: "equals", value: "Actor" }
-    ]
+  let ret = [];
+
+  game.users.forEach(player => {
+    if (player.character && player.active) {
+      ret.push(player.character);
+    }
   });
-  if (partyFolders.length > 0) {
-    const partyFolderId = partyFolders[0].id;
-    return game.actors.search({
-      filters: [
-        { field: "folder.id", operator: "equals", value: partyFolderId },
-        { field: "type", operator: "equals", value: "Player" }
-      ]
-    });
-  }
-  return [];
+
+  return ret;
 }
 
 class Award extends FormApplication {

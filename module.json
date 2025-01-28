@@ -1,7 +1,7 @@
 {
   "id": "shadowdark-award-xp",
   "title": "Shadowdark Award XP",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
@@ -26,6 +26,11 @@
       "name": "Zach Waller",
       "discord": "haloxbox",
       "flags": {}
+    },
+    {
+      "name": "Markus Ornik",
+      "discord": "SGCMarkus",
+      "flags": {}
     }
   ],
   "languages": [
@@ -36,6 +41,6 @@
       "flags": {}
     }
   ],
-  "manifest": "https://github.com/zacharydwaller/shadowdark-award-xp/releases/download/latest/module.json",
-  "download": "https://github.com/zacharydwaller/shadowdark-award-xp/releases/download/latest/module.zip"
+  "manifest": "https://github.com/SGCMarkus/shadowdark-award-xp/releases/download/latest/module.json",
+  "download": "https://github.com/SGCMarkus/shadowdark-award-xp/releases/download/latest/module.zip"
 }
